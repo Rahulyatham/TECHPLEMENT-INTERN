@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    color: white;
+    background-color:black;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.sizzie a{
+    font-size: 20px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+}
+
+.sizzie a:hover {
+       color: #00abf0;
+}
+
+.Home {
+    height: 100vh;
+    background: url(Home.jpg) no-repeat;
+    background-position:right;
+    background-size:left;
+    display: flex;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+
+.Home-content{
+    max-width: 700px;
+}
+
+.Home-content h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.Home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.Home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.Home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border-radius: 8px;
+    border: 2px solid #00abf0;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: aqua;
+}
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    background: transparent;
+    transition: 3s;
+}
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
